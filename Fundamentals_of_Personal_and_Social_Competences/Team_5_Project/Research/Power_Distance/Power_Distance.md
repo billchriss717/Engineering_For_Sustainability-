@@ -49,6 +49,7 @@ functional baseline of human society. Everyone has their rightful place in a str
 - Respectul Distance
 
 ## 2. \blue{Low Power Distance Societies}
+
 In cultures with a low Power Distance index, society stresses equal rights, flat structures, and 
 opportunity for all. Inequality is viewed as an artificial, practical inconvenience that should 
 be minimized wherever possible.
@@ -62,3 +63,7 @@ be minimized wherever possible.
 - Minimizing Status
 
 - Open Contradiction
+
+In Cameroonian culture inequality and hierarchy are generally accepted as normal foundational 
+parts of the social fabric. Power is expected to be centralized, and respect for authority 
+whether based on age, titles, wealth, or traditional  positioning is deeply ingrained.
