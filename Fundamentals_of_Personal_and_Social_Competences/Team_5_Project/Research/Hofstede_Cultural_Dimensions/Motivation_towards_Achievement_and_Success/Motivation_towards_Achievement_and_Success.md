@@ -1,5 +1,5 @@
 ---
-title: "**Motivation towards Achievement and Success (former Masculinity vs. Feminity) **"
+title: "**Motivation towards Achievement and Success (former Masculinity vs. Femininity) **"
 geometry: "margin=1in"
 author: "Billy"
 date: "May 26 , 2026"
