@@ -30,7 +30,7 @@ classoption: 10pt
 
 ## a) Discuss aspects that one should be aware of when dealing with different cultures in a professional context in order to work together successfully, e.g. as a representative of a company and negotiating partner or as colleagues working together or as in a relationship employee or employer.
 
-\blue{\textbf{Speaker Notes:}} **For the main introduction**
+\blue{\textbf{Speaker Scripts:}} **For the main introduction**
 
 - Before we unpack the business specificities, we need to understand the cultural roots that 
 shape how people from these two incredible nations think, act, and communicate.
@@ -47,26 +47,56 @@ standards.
 before the self and to deeply respect authority. Let’s see how these organic roots play out in the
 workplace.
 
-\blue{\textbf{Speaker Notes:}}
+\red{\textbf{Speaker Notes:}}
+- The hook: [Click to slide]
+
+- Before unpacking business specificities $\rightarrow$ must look at cultural roots (shapes how 
+they think , act , communicate).
+
+- Cameroon Profile: look briefly at the vibrant visual on the slide.
+  - "Africa in miniature" $\rightarrow$ 250+ diverse ethnic groups packed into one nation.
+  - Core social fabric = Community ties + strict respect for elders.
+
+- Sri Lanka Profile: Thousands of miles away, deep South Asian heritage.
+  - Gold standards = family collectivism + maintaining social harmony.
+- The shared core (the bridge): Different geography/ history, but identical core values.
+  - Big takeaway: Both place the group before the self and deeply respect authority.
+
+- Pivot: [Look UP / Pause]
+   - setup next slide: "Lets see how these organic roots play out in the workplace.
+" $rightarrow$ [CLICK].
+
+
+
+\blue{\textbf{Speaker Scripts:}}
 - Before we map data, we must understand how cultural differences manifest in the real business 
 world. As the infographic on the slide displays, true intercultural communication relies on a 
 continuous cycle of listening actively, showing empathy, and avoiding rigid stereotyping.
 
-- In a negotiation setting, you have to know if your partner values personal trust or a fast 
-contract first.
+- In a negotiation setting, one has to account for the value of the partner before them.
+In the case where they value personal trust or fast contract first. 
 
-- When working as colleagues, friction usually comes from communication styles—what one person 
-considers 'honest feedback,' another might experience as an aggressive insult.
+- When working as colleagues, friction usually arise from communication types —what one person 
+considers  as 'honest feedback,' another might take offense to their ego or intellect.
 
-- Finally, in an employer-employee relationship, hierarchy defines everything.
-A manager from a flat culture might expect employees to take independent initiative,
+- Finally, in an employer-employee relationship, hierarchy is the main deterministic factor for 
+everything. A manager from a flat culture might expect employees to take independent initiative,
 while an employee from a hierarchical culture might wait for explicit, step-by-step instructions
 out of respect. Recognizing these invisible boundaries is what prevents workplace projects from
 completely derailing.
 
+\red{\textbf{Speaker Notes:}}
+- The Transition: [Click to slide]
+  - moving from foundations to the real business world $rightarrow$ How do cultural differences 
+  manifest?
+  - Point to infographic on slide. True intercultural communication is a continuous cycle 
+  $\rightarrow$ active listening $\rightarrow$ Empathy $\rightarrow$ avoiding rigid stereotypes.
+
+
+
 ## b) Discuss the impact of specific different cultural rules or cultural related behaviour in various aspects on professional cooperation or negotiation situations. What is the reason or background for this behaviour?
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - To truly master cross-cultural cooperation, we have to look past the surface actions and 
 understand the 'why' behind the behavior.
 
@@ -85,7 +115,7 @@ with a person.
 
 ## d) After the discussion in your team, focus for the presentation by agreeing upon the 3-5 most important aspects that you consider as critical success factors or most interesting in this specific intercultural interaction constellation to go further with, presented and discussed in your coursework
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - After evaluating how these distinct cultural dynamics clash and align, our team synthesized
 our findings into four critical success factors for this specific interaction constellation.
 
@@ -105,7 +135,7 @@ In this constellation, a solid personal bond is the exact engine that drives pro
 
 ## a) Study at first individually on the cultural dimensions of Hofstede and work on the referring task provided in Moodle (additional source: Hofstede, Geert (2010): Cultures and Organizations - Software of the Mind); https://www.theculturefactor.com)
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - To kick things off, let's look at the tool grounding our analysis today: Hofstede’s Cultural
 Dimensions. Developed from massive global research, this framework acts as a roadmap for decoding
 human behavior. It takes the invisible unwritten rules of society—like how we view authority,
@@ -116,7 +146,7 @@ critical. We are putting Hofstede to the test by directly comparing his official
 against my own personal, lived cultural experience. This will show us where the framework gets it 
 right, where it falls short, and how these dynamics impact us in a global environment.
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - Before we jump into the charts, let's introduce the two nations anchoring our study today:
 Cameroon and Sri Lanka. On the surface, they might seem completely worlds apart—one sitting in
 the heart of Central Africa and the other a tropical island nation in South Asia.
@@ -146,18 +176,18 @@ explanation for differences in family life, economic behavior, and social happin
 
 ## c) Create a scheme of visualization for the four selected cultural dimensions that can optimally represent the core messages graphically to be integrated in your slides for the presentation. Each cultural dimension should be considered separately. You can use Excel for this, but you can also find other creative means of visualisation. This graphic representation should not only reflect your personal perception, but best step by step integrates the other assessments (see next points). So that you can gradually create a comprehensive comparison integrating different aspects - that is easy to understand and visually supports what you are saying in your presentation in class.
 
-- \blue{\textbf{Power Distance Speaker Notes:}} As you can see on the chart, this is an area of
+- \blue{\textbf{Power Distance Speaker Scripts:}} As you can see on the chart, this is an area of
 deep alignment. Both cultures naturally respect formal authority. In a university context like 
 HSRW, this means students from both backgrounds fundamentally respect academic boundaries and
 the hierarchical roles of professors and staff.
 
-- \blue{\textbf{Individualism vs. Collectivism Speaker Notes:}} While both bars lean heavily 
+- \blue{\textbf{Individualism vs. Collectivism Speaker Scripts:}} While both bars lean heavily 
 toward a collective mindset, the visual gap shows that Cameroon's group dependency is even 
 stronger. Sri Lankan collectivism is deeply anchored in extended family networks, whereas 
 Cameroonian collectivism broadens into massive communal and financial safety nets, like the 
 traditional Njangi systems.
 
-- \blue{\textbf{Motivation towards Success Speaker Notes:}} This graph is practically 
+- \blue{\textbf{Motivation towards Success Speaker Scripts:}} This graph is practically 
 mirror-perfect. Neither culture is overly aggressive or purely driven by individualistic 
 competition. Instead, both student bodies value cooperation, maintaining strong social 
 relationships, and balancing academic success with quality of life.
@@ -169,7 +199,7 @@ restrained environment where social duties and traditional norms often guide per
 
 ## d) Explain in your presentation, why you perceive your culture the way you do. (Give two specific examples from everyday life that illustrate your assessment)
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - To understand why I perceive Cameroon this way, we have to look at
 daily life, where these dimensions actually live.
 
@@ -189,7 +219,7 @@ That is why I view my culture as deeply interconnected and expressive.
 
 ## f) Also indicate whether you agree with Hofstede's findings. Why or why not? Critically discuss: What might be problems with his approach? What might be problems with your approach?
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 -  To address parts E and F of the assignment, do I agree with 
 Hofstede's assessment? For the most part, no. The graphs expose a massive disconnect between
 my lived reality and his textbook data. I experience my culture as deeply communal and highly
@@ -207,7 +237,7 @@ the true human experience.
 
 ## g) In addition, based on the same cultural dimensions chosen, discuss how you perceive Rhine-Waal University organizational and work culture; focusing on academic staff and administration and not on students. Give two specific examples to support your assumptions. Since there is no official Hofstede score, add the German graph to compare
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - To wrap up, do we agree with these findings? Broadly, yes. The massive contrast on our 
 graphs—like Individualism jumping from 20 in Cameroon to 90 at HSRW—perfectly captures the real
 shock of moving from a highly communal society into an independent European academic environment.
@@ -224,7 +254,7 @@ heavily biased. It’s a useful map, but not the whole territory.
 
 ## h) Conclude and discuss the implications when these cultures involved come together in a professional context (at our university). If there are areas where potential problems or misunderstandings may arise. Discuss and make suggestions how best to deal with them.
 
-\blue{\textbf{Speaker Notes:}}
+\blue{\textbf{Speaker Scripts:}}
 - To conclude, what happens when these two cultural realities collide right here on campus?
 The friction shows up in two main areas: hierarchy and teamwork.
 
