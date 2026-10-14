@@ -1,0 +1,49 @@
+% ---- Core Geometry & Margins ----
+\usepackage[margin=1in, top=1.2in, bottom=1.2in]{geometry}
+
+% ---- Font & Micro-Typography ----
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% \usepackage{newtxtext}
+% \usepackage{newtxmath}
+% \usepackage{libertinus}
+\usepackage{microtype}
+
+% ---- Language & Math ----
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{booktabs}  % In your preamble
+
+% ---- Formatting & Aesthetics ----
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{csquotes}
+
+% ---- Color Palette ----
+\definecolor{navyblue}{RGB}{16, 55, 87}
+\definecolor{darkslate}{RGB}{53, 64, 83}
+
+% ---- Hyperlinks Setup ----
+\usepackage[
+  pdfencoding=auto,
+  colorlinks=true,
+  linkcolor=navyblue,
+  citecolor=navyblue,
+  urlcolor=navyblue
+]{hyperref}
+
+% ---- Bibliography Setup ----
+\usepackage[
+  backend=biber,
+  style=numeric-comp,
+  sorting=nyt,
+  giveninits=true
+]{biblatex}
+\addbibresource{references.bib}
+
+% --- Metadata ---
+\title{Random Thoughts}
+\author{Guetchuin Tadouanla}
+\date{today}
