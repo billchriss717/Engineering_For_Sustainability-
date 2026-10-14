@@ -1,5 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 \input{preamble.tex}
+
 % ====================================================================================
 \begin{document}
 \pagenumbering{roman}
@@ -11,11 +12,106 @@
 \setcounter{page}{1}
 
 \section{Introduction}
-In terms of sustainable development, Cameroon is currently ranked $\mathbf{135^{th}}$ out of
-\textbf{169} countries with a sustainable development Goal Index score of $\mathbf{57.6\%}$
-according to the sustainable development report of 2025.
+According to the \textit{Sustainable Development Report 2025} \cite{sdr2025}, Cameroon ranks $\mathbf{135^{th}}$ out of \textbf{169} countries, with an SDG Index score of $\mathbf{57.6\%}$. Figure~\ref{fig:SDG_dashboard} displays the overall national status across all 17 goals.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/SDG_dashboard.png}
+  \caption{Cameroon SDG Dashboard and Trends}
+  \label{fig:SDG_dashboard}
+\end{figure}
+
+Cameroon has achieved \textbf{SDG 12 (Responsible Consumption and Production)} and \textbf{SDG 13 (Climate Action)}. \textbf{SDG 14} retains moderate challenges, while \textbf{SDG 8} faces significant challenges. However, the remaining SDGs face \textbf{major challenges} with stagnating progress. This report focuses on \textbf{SDG 7 (Affordable and Clean Energy)}, \textbf{SDG 9 (Industry, Innovation, and Infrastructure)}, and \textbf{SDG 11 (Sustainable Cities and Communities)}, outlining targeted embedded and IoT engineering solutions.
+
 \section{SDG 7: Affordable and Clean Energy}
+SDG 7 aims to ensure access to affordable, reliable, sustainable, and modern energy for all. Cameroon faces major challenges, with progress stagnating or advancing at under $50\%$ of the required pace. Key tracking indicators include:
 
+\begin{itemize}
+  \itemsep 0em
+  \item Population with access to electricity
+  \item Population with access to clean fuels and technology for cooking
+  \item $\text{CO}_2$ emissions from fuel combustion per total electricity output
+  \item Renewable energy share in total final energy consumption
+\end{itemize}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/sustainable-development-report-2026-population-with-access-to-clean-fuels-and-technology-for-cooking.png}
+  \caption{Population with access to clean fuels and technology for cooking}
+  \label{fig:sdg7_cooking}
+\end{figure}
+
+\subsection{Indicator: Population with Access to Clean Fuels and Technology for Cooking}
+
+\textbf{Problem Statement:} Over $80\%$ of low-income Cameroonian households rely on firewood and charcoal, causing severe indoor air pollution and health risks. High upfront costs ($15\text{--}20~\text{USD}$) for Liquefied Petroleum Gas (LPG) cylinders prevent adoption compared to purchasing cheap daily charcoal.
+
+\textbf{Potential Solutions:}
+\begin{enumerate}
+  \itemsep 0em
+  \item \textbf{Smart PAYGO LPG Systems \cite{shupler2021}:} Low-cost MCU smart meters with load-cell weight sensors, electronic solenoid valves, and cellular modems (NB-IoT/GSM). Users pay small amounts via mobile money (MTN MoMo/Orange Money), unlocking gas incrementally while notifying suppliers before empty.
+  \item \textbf{IoT Biogas Digesters:} Low-power sensor nodes ($pH$, pressure, temp) powered by cookstove waste heat via Thermoelectric Generators (TEGs) to monitor organic waste digestion in livestock regions, reporting telemetry over LoRaWAN.
+  \item \textbf{Thermoelectric Gasifiers:} Forced-draft micro-gasifiers using Seebeck TEG modules to power PWM combustion fans directly from stove heat, ensuring clean biomass burning off-grid without electricity.
+\end{enumerate}
+
+\section{SDG 9: Industry, Innovation, and Infrastructure}
+SDG 9 aims to build resilient infrastructure, promote inclusive industrialization, and foster innovation. Cameroon faces major challenges, with progress stagnating or advancing at under $50\%$ of the required pace. Key tracking indicators include:
+
+\begin{itemize}
+  \itemsep 0em
+  \item Rural population with access to all-season roads
+  \item Mobile broadband subscriptions per 100 population
+  \item Logistics Performance Index: Infrastructure Score
+  \item Expenditure on research and development (\% of GDP)
+  \item Total patent applications by applicant's origin
+\end{itemize}
+
+\subsection{Indicator: Total Patent Applications by Applicant's Origin}
+
+\textbf{Problem Statement:} Domestic patent applications remain extremely low, reflecting a dependency on expensive, imported technology unsuited for local tropical environments. Local engineers lack hardware R\&D funding, prototyping labs, and commercialization pathways.
+
+\textbf{Potential Solutions:}
+\begin{enumerate}
+  \itemsep 0em
+  \item \textbf{Frugal Embedded R\&D:} Local engineering focused on open microcontrollers (STM32/ESP32) and modular PCBs tailored for agricultural processing, energy metering, and environmental monitoring.
+  \item \textbf{Open-Source Hardware Ecosystems:} Utilizing open architectures (FreeRTOS, Linux, open gateway designs) to allow local innovators to build and deploy systems without prohibitive licensing fees.
+  \item \textbf{University FabLabs:} Establishing rapid prototyping labs (3D printers, PCB mappers) in universities to transition student designs into bench-tested, patentable hardware.
+\end{enumerate}
+
+\section{SDG 11: Sustainable Cities and Communities}
+SDG 11 aims to make human settlements inclusive, safe, resilient, and sustainable. Cameroon faces major challenges, with progress stagnating or advancing at under $50\%$ of the required pace. Key tracking indicators include:
+
+\begin{itemize}
+  \itemsep 0em
+  \item Proportion of urban population living in slums
+  \item Access to an improved water source, piped (\% of urban population)
+  \item Satisfaction with public transport
+  \item Annual mean concentration of particulate matter ($\text{PM}_{2.5}$) in urban areas
+\end{itemize}
+
+\subsection{Indicator: Access to an Improved Water Source, Piped}
+
+\textbf{Problem Statement:} Municipal distribution networks in Douala and Yaoundé suffer severe pipe leaks and supply outages, leaving urban populations without clean piped water and forcing reliance on untreated sources or expensive vendors.
+
+\textbf{Potential Solutions:}
+\begin{enumerate}
+  \itemsep 0em
+  \item \textbf{Smart Pressure/Acoustic WSNs:} Low-power LoRaWAN/NB-IoT sensor nodes monitoring acoustic vibrations and pressure drops along water mains to detect pipe bursts in real time.
+  \item \textbf{Prepaid IoT Water Kiosks:} Solar-powered neighborhood kiosks with RFID readers, MCU flow meters, and mobile money billing to dispense clean piped water at fair municipal rates.
+  \item \textbf{Autonomous Water Quality Telemetry:} Solar-powered purification stations with real-time $pH$, turbidity, and conductivity sensors broadcasting drinking safety alerts.
+\end{enumerate}
+
+\section{Conclusion}
+Progress across SDGs 7, 9, and 11 in Cameroon can be accelerated through frugal embedded engineering. Deploying smart PAYGO LPG meters, open-source hardware, and low-power water monitoring networks offers low-cost, locally maintainable solutions to national sustainability bottlenecks.
+
+\newpage
+\begin{thebibliography}{9}
+
+  \bibitem{sdr2025}
+  J.~Sachs, G.~Lafortune, and G.~Fuller, \textit{Sustainable Development Report 2025}. Sustainable Development Solutions Network (SDSN), 2025.
+
+  \bibitem{shupler2021}
+  M.~Shupler et al., ``Pay-as-you-go LPG for clean cooking in low-income urban settings: a community-based trial,'' \textit{Nature Energy}, vol. 6, no. 4, pp. 379--389, 2021.
+
+\end{thebibliography}
 
 \end{document}

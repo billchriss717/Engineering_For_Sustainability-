@@ -1,0 +1,103 @@
+\documentclass[11pt, a4paper]{article}
+\input{preamble.tex}
+
+% ====================================================================================
+\begin{document}
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}
+In terms of sustainable development, Cameroon is currently ranked $\mathbf{135^{th}}$ out of \textbf{169} countries, with a Sustainable Development Goal Index score of $\mathbf{57.6\%}$ in accordance with the \textit{Sustainable Development Report 2025}. Figure~\ref{fig:SDG_dashboard} illustrates the current situation of Cameroon in regards to the \textbf{17} Sustainable Development Goals.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{figures/SDG_dashboard.png}
+  \caption{Cameroon SDG Dashboard and Trends}
+  \label{fig:SDG_dashboard}
+\end{figure}
+
+The country has achieved two sustainable development goals, namely \textbf{SDG 12: Responsible Consumption and Production} and \textbf{SDG 13: Climate Action}. \textbf{SDG 14} shows some challenges remaining, while \textbf{SDG 8} shows significant challenges remaining in order to achieve the goal. The remaining SDGs face \textbf{major challenges} and remain far from the sustainable development targets.
+
+My focus will be on \textbf{SDG 7 (Affordable and Clean Energy)}, \textbf{SDG 9 (Industry, Innovation, and Infrastructure)}, and \textbf{SDG 11 (Sustainable Cities and Communities)}, where targeted engineering solutions can directly address critical challenges.
+
+\section{SDG 7: Affordable and Clean Energy}
+This Sustainable Development Goal aims at ensuring access to affordable, reliable, sustainable, and modern energy for all. Cameroon is facing \textbf{major challenges} regarding the affordability and cleanliness of the energy consumed in the country. The Sustainable Development Report shows that progress is stagnating or increasing at a rate of less than $\mathbf{50\%}$ of the required pace toward the goal. Several stagnating and low-trending indicators prove this to be a challenge to the country's sustainable development:
+
+\begin{itemize}
+  \item Population with access to electricity
+  \item Population with access to clean fuels and technology for cooking
+  \item $\text{CO}_2$ emissions from fuel combustion per total electricity output
+  \item Renewable energy share in total final energy consumption
+\end{itemize}
+
+\subsection{Indicator: Population with Access to Clean Fuels and Technology for Cooking}
+
+\subsubsection*{Problem Statement}
+Over $80\%$ of low-income households in Cameroon rely on solid biomass, charcoal, and firewood for daily cooking. This reliance generates severe indoor air pollution, exposing families to fine particulate matter ($\text{PM}_{2.5}$) and carbon monoxide ($\text{CO}$), leading to chronic respiratory illnesses and accelerating deforestation. The primary bottleneck preventing households from adopting clean energy (such as Liquefied Petroleum Gas, LPG) is the high upfront capital cost of purchasing a full cylinder ($15\text{--}20~\text{USD}$), making it unaffordable compared to small daily purchases of charcoal.
+
+\subsubsection*{Potential Solutions}
+\begin{enumerate}
+  \item \textbf{Smart Pay-As-You-Go (PAYGO) LPG Systems:} Deploying low-cost IoT smart meters attached to LPG cylinders. An embedded microcontroller (MCU) interfaced with a load cell weight sensor, an electronic solenoid valve, and a cellular modem (NB-IoT/GSM) allows households to purchase small gas increments via mobile money (MTN MoMo/Orange Money). This eliminates large upfront costs while providing gas distributors with automated low-level alerts for cylinder replacements.
+  \item \textbf{IoT-Monitored Anaerobic Biogas Digesters:} In pastoral regions (such as the Far North region), abundant livestock manure can be converted into methane gas ($CH_4$) using household anaerobic digesters. Integrating low-power sensor nodes ($pH$, temperature, $CH_4$ pressure) with thermoelectric generators (TEGs) harvesting cookstove waste heat enables self-powered telemetry over LoRaWAN to ensure continuous system maintenance.
+  \item \textbf{Thermoelectric Forced-Draft Micro-Gasifier Stoves:} For off-grid rural communities, forced-draft biomass stoves powered by small pulse-width modulation (PWM) fans can be deployed. The fan is driven directly by Seebeck thermoelectric modules harvesting heat from the stove, ensuring clean wood-gas combustion with near-zero emissions without requiring grid electricity.
+\end{enumerate}
+
+\section{SDG 9: Industry, Innovation, and Infrastructure}
+This Sustainable Development Goal aims at building resilient infrastructure, promoting inclusive and sustainable industrialization, and fostering innovation. Cameroon is facing \textbf{major challenges} in this domain, with progress stagnating or increasing at a rate of less than $\mathbf{50\%}$ of the required pace toward the goal. Several stagnating and low-trending indicators prove this to be a challenge to the country's sustainable development:
+
+\begin{itemize}
+  \item Rural population with access to all-season roads
+  \item Population using the internet
+  \item Mobile broadband subscriptions per 100 population
+  \item Logistics Performance Index: Infrastructure Score
+  \item Score of top 3 universities in \textit{Times Higher Education}
+  \item Articles published in academic journals
+  \item Expenditure on research and development (\% of GDP)
+  \item Total patent applications by applicant's origin
+  \item E-government: Online Services Index
+\end{itemize}
+
+\subsection{Indicator: Total Patent Applications by Applicant's Origin}
+
+\subsubsection*{Problem Statement}
+Cameroon registers an extremely low number of domestic patent applications filed by resident applicants. This reflects a structural technological dependency on imported, expensive foreign equipment that is often unsuited for local environmental and economic conditions. Local engineers and university researchers face a lack of hardware R\&D funding, accessible prototyping laboratories, and intellectual property support, preventing local technical innovations from scaling into patented commercial products.
+
+\subsubsection*{Potential Solutions}
+\begin{enumerate}
+  \item \textbf{Frugal Embedded Systems R\&D:} Encouraging local engineering focused on low-cost, modular microcontrollers (e.g., STM32, ESP32) and open custom PCB design to build locally manufactured solutions for agricultural processing, energy metering, and environmental monitoring.
+  \item \textbf{Open-Source Hardware and Software Ecosystems:} Leveraging open architectures (such as FreeRTOS, Linux, and open-hardware IoT gateway designs) allows local innovators to build, adapt, and deploy industrial-grade systems without paying prohibitive external licensing fees.
+  \item \textbf{University FabLabs and Prototyping Incubators:} Establishing digital fabrication laboratories within Cameroonian universities equipped with 3D printers, PCB mappers, and testing benches to enable engineering students to transition theoretical concepts into bench-tested, patentable hardware prototypes.
+\end{enumerate}
+
+\section{SDG 11: Sustainable Cities and Communities}
+This Sustainable Development Goal aims at making cities and human settlements inclusive, safe, resilient, and sustainable. Cameroon is facing \textbf{major challenges} in urban development, with progress stagnating or increasing at a rate of less than $\mathbf{50\%}$ of the required pace toward the goal. Several stagnating and low-trending indicators prove this to be a challenge to the country's sustainable development:
+
+\begin{itemize}
+  \item Proportion of urban population living in slums
+  \item Access to an improved water source, piped (\% of urban population)
+  \item Satisfaction with public transport
+  \item Annual mean concentration of particulate matter ($\text{PM}_{2.5}$) in urban areas
+  \item Municipal solid waste management and collection rate
+\end{itemize}
+
+\subsection{Indicator: Access to an Improved Water Source, Piped}
+
+\subsubsection*{Problem Statement}
+In major Cameroonian urban and peri-urban centers (such as Douala and Yaoundé), a large portion of the population lacks access to clean, piped water directly connected to their dwellings. Aging municipal distribution networks suffer from severe pipe leaks, unmonitored pressure drops, and frequent supply outages, leading to significant water loss. Consequently, low-income urban communities are forced to rely on untreated surface water or expensive informal water vendors.
+
+\subsubsection*{Potential Solutions}
+\begin{enumerate}
+  \item \textbf{Smart Acoustic and Pressure Leak Detection WSNs:} Installing low-power IoT sensor nodes along municipal water mains to monitor pressure gradients and acoustic vibrations. Connected via LoRaWAN or NB-IoT, these nodes report real-time pipe bursts and non-revenue water (NRW) leaks to municipal utilities before major supply failures occur.
+  \item \textbf{Prepaid IoT Smart Water Kiosks:} Deploying automated, solar-powered water dispensing kiosks in peri-urban neighborhoods. Equipped with RFID card readers, microcontroller-based flow meters, and cellular telemetry, residents can purchase purified piped water at fair municipal rates using mobile money.
+  \item \textbf{Autonomous Solar Water Filtration and Quality Telemetry:} Integrating real-time water quality sensors ($\text{pH}$, turbidity, conductivity) with micro-controlled solar water purification systems at decentralized community water points to continuously verify drinking water safety and broadcast health alerts during contamination events.
+\end{enumerate}
+
+\section{Conclusion}
+Achieving progress across SDGs 7, 9, and 11 in Cameroon does not require overly expensive imported infrastructure. By applying targeted embedded engineering—such as smart PAYGO LPG metering, frugal open-source hardware development, and low-power water monitoring sensor networks—Cameroon can construct resilient, low-cost, and locally maintainable technical solutions that directly address its key sustainability bottlenecks.
+
+\end{document}
