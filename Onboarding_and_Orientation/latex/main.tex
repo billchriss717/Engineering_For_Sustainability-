@@ -1,0 +1,184 @@
+\documentclass[]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+%for the bibliography
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{Sources.bib}
+
+\newcommand{\commandToText}[1]{\texttt{\string#1}}
+
+%opening
+\title{A \LaTeX  \ Showcase}
+\author{Fabrice Kirsch}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Today we will learn about \LaTeX.\\
+  This is the abstract. Here you put a short summary of your report.
+  The tradtional structure of a scientific work is:
+  \begin{enumerate}
+    \item Introduction
+          \begin{itemize}
+            \item The current state of the art.
+            \item Everything your reader should know.
+            \item End with the problem Statement
+          \end{itemize}
+    \item Materials and Methods (Procedure)
+    \item Results
+    \item Discussion
+          \begin{itemize}
+            \item How does your findings fit the state of the art?
+          \end{itemize}
+    \item (Outlook)
+  \end{enumerate}
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+
+
+\section{(Abbreviated) Basics of Scientific Writing}
+Main guidelines:
+\begin{enumerate}
+  \item The content is the interesting part, not the formatting.
+  \item Plagiarism: The reader assumes everything you write is your own creation/thought. If it is not cite it.
+  \item Add in your mind "unless your supervisor says something different" to the end of every sentence today.
+\end{enumerate}
+More in the individual sections: \autoref{sec:fig}, \autoref{sec:tab} \\
+\noindent For your \textbf{thesis} read: A Manual for Writers of Research Papers, Theses, and
+Dissertations by Kate L. Turabian (Library code: 00/ALC 16-7 ) \cite{turabian} \\
+
+
+\newpage
+
+\section{What is \LaTeX \ and why use it?}
+Latex is a text document creation framework. It looks and feels a bit like writing computer code. \\
+Advantages:
+\begin{itemize}
+  \item Looks good out of the box
+  \item Algorithmic layout decisions
+  \item Formulas look nice
+  \item Active helping community (If you cannot google it, I don't know it either)
+  \item Some error correction
+  \item Makes you feel like a hacker =)
+\end{itemize}
+Disadvantages:
+\begin{itemize}
+  \item Takes time to get used to e.g.
+        \begin{itemize}
+          \item \commandToText{\\} ends a line
+          \item Double spaces are ignored
+        \end{itemize}
+\end{itemize}
+
+\noindent Usually 3 Documents:
+\begin{itemize}
+  \item .tex file (main document)
+  \item .bib file (Bibliography)
+  \item .pdf file
+\end{itemize}
+... and all the figures as separate files.\\
+The compiler creates the pdf from the other documents.
+
+(Show Thesis (early version))
+
+\subsection{A few Words Regarding Overleaf}
+\begin{itemize}
+  \item Web access.
+  \item Most packages already installed.
+  \item Free individual version.
+  \item Free collaborative version is included in Sciebo.
+  \item In the pro version you can invite collaborators.
+  \item I like TeX Studio a bit better. (Also free, but local)
+\end{itemize}
+
+\section{Document Structure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Structure.jpg}
+  \caption{A guidline for students on the structure of their thesis \cite{Singh.2014}}
+  \label{fig:structure}
+\end{figure}
+\textbf{Fabrice include the use case for Citavi here (\autoref{fig:structure})!!!}\\
+Avoid having two subsequent headers without text in between.
+\section*{Section}
+\subsection*{Subsection}
+\subsubsection*{Subsubsection}
+
+\section{Figures}\label{sec:fig}
+A figure needs a caption below the figure. The caption has to work without the text. The text has to work without the figure. A cross reference is required at a fitting position in the text (\autoref{fig:foto}). Avoid formulations like: "In \autoref{fig:foto} we see..." or "\autoref{fig:foto} shows...". Just write what is seen in the figure.
+Figures and tables are floating objects, LaTeX will decide where to place it. Adding a [h!] to the command will try to force to the position in the .tex document.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Structure.jpg}
+  \caption[Short Name for Table of figures]{An example figure showing my face. Just to clarify I would have to credit my wife for the photo because I did not do it myself.}
+  \label{fig:foto}
+\end{figure}
+
+
+\section{Tables}\label{sec:tab}
+Tables work the same as figures. Only the caption is on top of the table (\autoref{tab:tab}).
+A good table only has three lines:
+\begin{enumerate}
+  \item One above the first row.
+  \item One below the first row.
+  \item One below the last row.
+\end{enumerate}
+
+\begin{table}[h!]
+  \centering
+  \caption{Caption}
+  \begin{tabular}{|c| c| c| c|}
+    \hline
+    header  1 & header 2 & header 3 & header 4 \\
+    \hline
+    1         & 2        & 6        & 7        \\
+    \hline
+    3         & 4        & 9        & 7        \\
+    \hline
+  \end{tabular}
+
+  \label{tab:tab}
+\end{table}
+
+
+
+\section{Equations}
+Equations c\"an be $\sigma      $ included in different ways. In the text using single\$ signs like $f(x)=\left(x_{2x}\right)$.
+Or in a single line using double \$\$ signs
+$$
+  f(x)=e^{-\frac{x^2}{\sigma}}
+$$
+$$
+  f(x)=e^{-\dfrac{x^2}{\sigma}}
+$$
+Or we use the equation environment:
+\begin{equation}
+  a_{index}
+\end{equation}
+\begin{equation}\label{eq:eq}
+  f(x)=e^{-\dfrac{x^2}{\sigma}}
+\end{equation}
+There are other environments for aligned equal signs
+\begin{align}
+  f(x) & = x^2+3 \\
+       & =5
+\end{align}
+Of course we can cross reference (\autoref{eq:eq}) or just (\ref{eq:eq})
+\section{Citations}
+We need a .bib file \cite{Wouters.2022} and in the end we add commands \commandToText{\cite\{name\}} \\
+References only appear in the Reference list is they are used. \cite{Glover.1994}
+An easy way to get the bib for a source is google scholar
+\newpage
+\noindent What is still left to be implemented is the table of \textbf{figures} and the \textbf{table} of tables.
+\printbibliography
+\addcontentsline{toc}{section}{References}
+
+\end{document}
+
+
