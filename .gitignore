@@ -6,4 +6,12 @@
 *.jpg
 *.png
 *.log
-/Onboarding_and_Orientation/Friday_Deliverables/3/Final-Deliverable/main.synctex.gz
+*.aux
+*.bcf
+*.gz
+*.fls
+*.blg
+*.fdb_latexmk
+*.out
+*run.xml
+*.bbl
